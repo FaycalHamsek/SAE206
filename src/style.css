@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+
+body{
+
+    background-color: #303030;
+    margin:0;
+    margin-top: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+#navbar ul{
+    
+    width:100%;
+    height: 40px;
+    background-color: #303030;
+    
+    margin: 0;
+    padding-left: 0;
+    padding-top: 15px;
+
+   
+    }
+
+ #navbar li{
+
+    display: inline;
+    list-style-type:none ;
+    margin:  20px;
+    color:#fff;
+    font-family:karla;
+    font-size: larger;
+    font-weight:500;
+    cursor: pointer;
+    
+    position: relative;
+}
+
+
+li:hover{
+    
+    color:#d84747
+    
+}
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #d84747;
+    transition: width 0.5s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+a {
+
+    text-decoration: none;
+    color:#fff;
+
+}
+
+/* Comme ca on évite les ambiguites*/
+.paragraphe3-avion {
+    background-color: #fff;
+    font-family: karla;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divise la div en deux colonnes de largeur égale */
+    grid-gap: 20px; /* Ajoute un espace de 20px entre les éléments */
+  }
+  
+  #p2-avion {
+    grid-column: 1 / 2; /* Définit la position de la div p2 sur la première colonne */
+  }
+  
+  .image-p2-avion {
+    grid-column: 2 / 3; /* Définit la position de l'image sur la deuxième colonne */
+    width:400px;
+    height: 600px;
+  }
+
+#logo{  
+    width: 150px;
+    height: 80px;
+  
+
+}
+
+.para{
+    position: relative;
+    z-index: 1;
+}
+
+#avion{
+
+    height: 900px;
+    width: 100%
+}
+
+#titre{
+
+    font-family:karla;
+    font-size: 50px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    
+
+}
+
+#date{
+
+    font-family: karla;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+#bg{
+
+    filter:blur(3px);
+    width: 100%;
+}
+
+
+.paragraphe1 {
+    position: relative;
+    width: 100%;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+    color: #fff; /* Couleur du texte */
+    box-sizing: border-box; /* Inclure les bordures et le padding dans la taille totale */
+    text-align: center;
+}
+
+#navpres ul {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 0;
+
+}
+
+#navpress ul{
+
+    width:100%;
+    height: 40px;
+    background-color: #fff;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 15px;
+    }
+
+#navpres li{
+
+
+
+    display: inline;
+    list-style-type:none ;
+    margin:  20px;
+    color:black;
+    font-family:karla;
+    font-size: larger;
+    font-weight:500;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+#navpres a {
+
+    color:black;
+}
+
+.paragraphe3{
+
+    background-color: #fff;
+    font-family: karla;
+
+
+}
+
+#expo{
+
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.partie{
+
+    padding-top: 30px;
+    padding-left:60px;
+    padding-bottom:100px;
+}
+
+.date{
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#lstfoot li {
+
+
+    display: inline;
+    list-style-type:none ;
+    font-family:karla;
+    font-size: 15px;
+    padding-left: 20px;
+
+}
+
+.map {
+padding-left: 50%;
+
+}
+
+
+.infos{
+
+    color:grey;
+}
+
+footer{
+
+    border-top:black solid 5px;
+}
+
+.epcont{
+
+    position: relative;
+}
+
+.ep-overlay{
+
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    display:flex;
+
+}
+
+.card {
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 4px;
+    background-color:#fff;
+    margin-right: 40px;
+
+
+  }
+  
+  .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: karla;
+    margin-bottom: 10px;
+    border-bottom: solid black;
+
+  }
+  
+  .card-description {
+    font-family: karla;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
